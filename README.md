@@ -5,6 +5,7 @@ a tool to batch rename files in a certain directory
 1. `go build -o batch-rename main.go`
 
 *in addition, one more step for linux、mac*
+
 2. `chmod +x batch-rename`
 
 ## usage
