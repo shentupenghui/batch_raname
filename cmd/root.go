@@ -36,7 +36,7 @@ var (
 					newName := strings.ReplaceAll(oldName, args[1], "")
 					oldPath := filepath.Join(basePath, oldName)
 					newPath := filepath.Join(basePath, newName)
-					fmt.Printf("filename before delete: %s, filename after delete: %s", oldPath, newPath)
+					fmt.Printf("filename before delete: %s, filename after delete: %s\n", oldPath, newPath)
 					os.Rename(oldPath, newPath)
 				}
 			}
@@ -47,7 +47,7 @@ var (
 					newName := strings.ReplaceAll(tmpName, args[1], args[2])
 					oldPath := filepath.Join(basePath, oldName)
 					newPath := filepath.Join(basePath, newName)
-					fmt.Printf("filename before replace: %s, filename after replace: %s", oldPath, newPath)
+					fmt.Printf("filename before replace: %s, filename after replace: %s\n", oldPath, newPath)
 					os.Rename(oldPath, newPath)
 				}
 			}
